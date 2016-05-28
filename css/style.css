@@ -1,0 +1,157 @@
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+@import url(https://fonts.googleapis.com/css?family=Satisfy|Comfortaa|Shadows+Into+Light+Two|Great+Vibes|Kalam|Yellowtail|Rock+Salt|Gloria+Hallelujah|Kaushan+Script|Dancing+Script|Oswald|Dosis|Covered+By+Your+Grace|Shadows+Into+Light);
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+
+@keyframes rollIn {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.rollIn {
+  animation-name: rollIn;
+  animation-fill-mode: forwards;
+  animation-delay: .3s;
+  animation-duration: .8s;
+}
+
+
+@keyframes rubberBand {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, .95, 1);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+
+
+.rubberBand {
+  animation-name: rubberBand;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
+body {
+  background: #E9573F;
+}
+
+.top-part span {
+  text-align: center;
+  font-size: 10em;
+}
+
+.top-part h1 {
+  text-align: center;
+  color: white;
+font-family: 'Covered By Your Grace', cursive;
+font-size: 80px;
+}
+
+.top-part p {
+  text-align: center;
+  color: white;
+}
+
+h3 {
+  font-family: "Fjalla One";
+  font-size: 2.6em;
+}
+
+.main-wrapper {
+  width: 50%;
+  height: 650px;
+  position: relative;
+  margin-top: 20px;
+  border: 0px;
+  border-radius: 25px;
+  padding: 60px;
+}
+
+#getit {
+  width: 160px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  bottom: 15px;
+  left: 44%;
+  background: #009688;
+  color: white;
+  transition: all 1.2s;
+  border-radius: 40px;
+}
+
+#tweet {
+  display: none;
+}
+
+#getit:hover {
+  color: black;
+  
+  background: white;
+}
+
+#quote-area {
+  color: white;
+  display: none;
+}
+
+#author {
+  text-align: right;
+  padding-right: 18%;
+}
+
+@media screen and (max-device-width: 667px) {
+  .main-wrapper {
+    width: 80%;
+    height: 650px;
+    position: relative;
+    margin-top: 20px;
+    border: 0px;
+    border-radius: 25px;
+    padding: 20px;
+  }
+  .top-part span {
+    font-size: 1.8em;
+  }
+  .top-part h1 {
+    font-size: 1.5em;
+  }
+  .top-part p {
+    font-size: 1.2em;
+  }
+  h3 {
+    font-family: "Fjalla One";
+    font-size: 2.2em;
+  }
+  .main-wrapper {
+    width: 80%;
+    height: 650px;
+    position: relative;
+    margin-top: 20px;
+    border: 0px;
+    border-radius: 25px;
+    padding: 5px;
+  }
+}
